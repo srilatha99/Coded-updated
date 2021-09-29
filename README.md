@@ -1,29 +1,34 @@
-# README #
+# Coded Demo Summer 2021 #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Requires use of Visual Studio 2019 (https://visualstudio.microsoft.com/downloads) and the .NET 5.0 SDK (https://dotnet.microsoft.com/download)  
 
-### What is this repository for? ###
+### Purpose ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+This is a skills test developed by Coded Inc. for Software Engineer applicants. Applicants will fork this repository to their own, complete the objective, then provide Coded with access to their repository for review.  
 
-### How do I get set up? ###
+### Objective ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+The goal of this test is to add missing funcationlity to an existing ASP.NET web application.  
 
-### Contribution guidelines ###
+### Required Functionality ###
+  
+Check if the entered email already exists in the database.  
+Add the entered email to the database and the current user's session.  
+Get the email from the current user's session.  
 
-* Writing tests
-* Code review
-* Other guidelines
+### Additional Considerations ###
+  
+In this test, we are hoping to see demonstration of an understanding of the following concepts and technologies:  
+  
+Model-View-Controller Architecture  
+Entity Framework  
+HTML  
+Javascript (jQuery)  
+SCSS/CSS (Bootstrap)  
+ASP.NET Lifecycle Management  
+Dependency Injection  
 
-### Who do I talk to? ###
+Please feel free to demonstrate additional flair if you would like!  
 
-* Repo owner or admin
-* Other community or team contact
+Usage of the provided method stubs is optional and comments are appreciated, but noy required.  
+You are free to use any online resources and any client or system libraries you like. If you do use an external resource, please link it near the associated code.
