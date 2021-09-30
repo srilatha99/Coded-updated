@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CodedWebTest.Data;
 using CodedWebTest.Entities;
+using CodedWebTest.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;

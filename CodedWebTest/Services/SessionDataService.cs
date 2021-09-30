@@ -22,7 +22,7 @@ namespace CodedWebTest.Services
 
         public SessionDataService()
         {
-            // TODO: Get IHttpContextAccessor
+            // TODO: Get IHttpContextAccessor via Dependency Injection
         }
 
         public void ClearSession()
