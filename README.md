@@ -30,5 +30,5 @@ Dependency Injection
 
 Please feel free to demonstrate additional flair if you would like!  
 
-Usage of the provided method stubs is optional and comments are appreciated, but noy required.  
+Usage of the provided method stubs is optional and comments are appreciated, but not required.  
 You are free to use any online resources and any client or system libraries you like. If you do use an external resource, please link it near the associated code.
