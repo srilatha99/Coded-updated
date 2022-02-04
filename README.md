@@ -1,4 +1,4 @@
-# Coded Demo Summer 2021 #
+# Coded Demo Winter 2021 #
 
 Requires use of Visual Studio 2019 (https://visualstudio.microsoft.com/downloads) and the .NET 5.0 SDK (https://dotnet.microsoft.com/download)  
 
