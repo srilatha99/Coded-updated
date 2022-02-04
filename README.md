@@ -8,7 +8,7 @@ This is a skills test developed by Coded Inc. for Software Engineer applicants. 
 
 ### Objective ###
 
-The goal of this test is to add missing funcationlity to an existing ASP.NET web application.  
+The goal of this test is to add missing functionality to an existing ASP.NET web application.  
 
 ### Required Functionality ###
   
