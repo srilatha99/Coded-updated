@@ -1,6 +1,6 @@
-# Coded Demo Winter 2021 #
+# Coded Demo Summer 2023 #
 
-Requires use of Visual Studio 2019 (https://visualstudio.microsoft.com/downloads) and the .NET 5.0 SDK (https://dotnet.microsoft.com/download)  
+Requires use of Visual Studio 2022 (https://visualstudio.microsoft.com/downloads) and the .NET 6.0 SDK (https://dotnet.microsoft.com/download)  
 
 ### Purpose ###
 
@@ -18,7 +18,7 @@ Get the email from the current user's session.
 
 ### Additional Considerations ###
   
-In this test, we are hoping to see demonstration of an understanding of the following concepts and technologies:  
+In this test, we are hoping to see demonstration of an understanding of the following:  
   
 Model-View-Controller Architecture  
 Entity Framework  
@@ -28,7 +28,7 @@ SCSS/CSS (Bootstrap)
 ASP.NET Lifecycle Management  
 Dependency Injection  
 
-Please feel free to demonstrate additional flair if you would like!  
+Please feel free to add additional flair if you would like!  
 
 Usage of the provided method stubs is optional and comments are appreciated, but not required.  
 You are free to use any online resources and any client or system libraries you like. If you do use an external resource, please link it near the associated code.
