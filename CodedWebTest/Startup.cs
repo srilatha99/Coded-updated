@@ -77,15 +77,17 @@ namespace CodedWebTest
         }
 
         #region Do not edit
+
         private static void SeedDatabase()
         {
             var options = new DbContextOptionsBuilder<WebTestDBContext>().UseInMemoryDatabase(databaseName: "WebTestDatabase").Options;
 
             using var ctx = new WebTestDBContext(options);
 
-            ctx.EmailAddress.Add(new EmailAddress { EmailAddressUid = Guid.NewGuid(), Address = "joseph@codedinc.net", CreatedDate = DateTime.ParseExact("09/01/2021", "MM/dd/yyyy", CultureInfo.InvariantCulture) });
-            ctx.EmailAddress.Add(new EmailAddress { EmailAddressUid = Guid.NewGuid(), Address = "ed@codedinc.net", CreatedDate = DateTime.ParseExact("02/01/2018", "MM/dd/yyyy", CultureInfo.InvariantCulture) });
-            ctx.EmailAddress.Add(new EmailAddress { EmailAddressUid = Guid.NewGuid(), Address = "andrew@codedinc.net", CreatedDate = DateTime.ParseExact("06/19/2021", "MM/dd/yyyy", CultureInfo.InvariantCulture) });
+            ctx.EmailAddress.Add(new EmailAddress { EmailAddressUid = Guid.NewGuid(), Address = "joseph@codedinc.net", CreatedDate = DateTime.ParseExact("09/01/2022", "MM/dd/yyyy", CultureInfo.InvariantCulture) });
+            ctx.EmailAddress.Add(new EmailAddress { EmailAddressUid = Guid.NewGuid(), Address = "ed@codedinc.net", CreatedDate = DateTime.ParseExact("02/01/2012", "MM/dd/yyyy", CultureInfo.InvariantCulture) });
+            ctx.EmailAddress.Add(new EmailAddress { EmailAddressUid = Guid.NewGuid(), Address = "jose@codedinc.net", CreatedDate = DateTime.ParseExact("06/19/2022", "MM/dd/yyyy", CultureInfo.InvariantCulture) });
+            ctx.EmailAddress.Add(new EmailAddress { EmailAddressUid = Guid.NewGuid(), Address = "edward@codedinc.net", CreatedDate = DateTime.ParseExact("06/19/2022", "MM/dd/yyyy", CultureInfo.InvariantCulture) });
 
             ctx.SaveChanges();
         }

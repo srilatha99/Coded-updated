@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using CodedWebTest.Entities;
+﻿using CodedWebTest.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CodedWebTest.Data
