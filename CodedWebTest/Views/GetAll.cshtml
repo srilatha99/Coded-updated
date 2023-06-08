@@ -1,0 +1,10 @@
+﻿@model IEnumerable<string>
+
+<h2>All Email Addresses</h2>
+
+<ul>
+    @foreach (var email in Model)
+    {
+        <li>@email</li>
+    }
+</ul>

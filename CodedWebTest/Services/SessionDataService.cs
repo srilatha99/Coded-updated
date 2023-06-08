@@ -20,11 +20,12 @@ namespace CodedWebTest.Services
 
         private ISession _session => _httpContextAccessor.HttpContext.Session;
 
-        public SessionDataService()
+        public SessionDataService(IHttpContextAccessor httpContextAccessor)
         {
+            _httpContextAccessor = httpContextAccessor;
             // TODO: Get IHttpContextAccessor via Dependency Injection
-        }
 
+        }
         public void ClearSession()
         {
             _session.Clear();
@@ -38,8 +39,8 @@ namespace CodedWebTest.Services
         // TODO: Implement storing and retriving email address from session
         public string EmailAddress
         {
-            get => throw new NotImplementedException();
-            set => throw new NotImplementedException();
+            get => _session.GetString("EmailAddress");
+            set => _session.SetString("EmailAddress", value);
         }
     }
 }

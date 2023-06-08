@@ -7,18 +7,58 @@
 </div>
 
 <p class="text-center mt-5">Please enter your email address below</p>
-
-@*
-    TODO: Add HTML input for the email
-    TODO: Add HTML button to send the email to /Home/CheckEmail
-    TODO: Add HTML button to send the email to /Home/SaveEmail
-    TODO: Add HTML button to request the email from /Home/GetEmail
-*@ 
+<!-- Add this code to display the email in the view -->
 
 
-@section Scripts 
-{
-    @* 
-        TODO: Add scripts
-    *@
+<form method="post" action="/Home/checkEmail">
+    <!-- Email input field -->
+    <center>
+        <input type="text" name="email" />
+    </center>
+    <!-- Check Email button -->
+    <center>
+        <br />
+        <button type="submit" class="btn btn-primary" style="width:150px">check Email</button>
+        <button type="submit" formaction="/Home/saveEmail" class="btn btn-primary" style="width:150px">Save Email</button>
+        <button type="submit" formaction="/Home/getEmail" class="btn btn-primary" style="width:150px">Get Email</button>
+    </center>
+
+</form>
+
+@section Scripts
+    {
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("form").validate({
+                rules: {
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    email: {
+                        required: "Please enter your email address",
+                        email: "Please enter a valid email address"
+                    }
+                },
+                errorPlacement: function(error, element) {
+                    error.insertAfter(element);
+                },
+                errorElement: "div",
+                errorClass: "text-danger",
+                highlight: function(element) {
+                    $(element).addClass("error-field"); // Add a CSS class to the input field
+                },
+                unhighlight: function(element) {
+                    $(element).removeClass("error-field"); // Remove the CSS class from the input field
+                }
+            });
+        });
+    </script>
+
+
 }
