@@ -16,7 +16,7 @@ Get the email from the current user's session.
 
 ### Additional Considerations ###
   
-Here, we are hoping to see demonstration of an understanding of the following:  
+Here we can see see demonstration of an understanding of the following:  
   
 Model-View-Controller Architecture  
 Entity Framework  
@@ -26,10 +26,7 @@ SCSS/CSS (Bootstrap)
 ASP.NET Lifecycle Management  
 Dependency Injection  
 
-Please feel free to add additional flair if you would like!  
 
-Usage of the provided method stubs is optional and comments are appreciated, but not required.  
-You are free to use any online resources and any client or system libraries you like. If you do use an external resource, please link it near the associated code.
 
-references:
+references(syntax):
 https://www.w3schools.com/jquery/
