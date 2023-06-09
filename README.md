@@ -1,4 +1,4 @@
-# Coded Demo Summer 2023 #
+# Coded Project .Net #
 
 Requires use of Visual Studio 2022 (https://visualstudio.microsoft.com/downloads) and the .NET 6.0 SDK (https://dotnet.microsoft.com/download)  
 
