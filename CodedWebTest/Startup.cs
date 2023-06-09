@@ -15,6 +15,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+
 namespace CodedWebTest
 {
     public class Startup
@@ -43,8 +44,10 @@ namespace CodedWebTest
 
             // TODO: Configure SessionDataService
 
-            // TODO: Configure WebTestDBContext
-
+            services.AddDbContext<WebTestDBContext>(options =>
+          options.UseInMemoryDatabase(databaseName: "InMemoryDb"));
+            services.AddSingleton<ISessionDataService, SessionDataService>();
+            services.AddHttpContextAccessor();
             // Seed Database
             SeedDatabase();
         }
@@ -68,12 +71,14 @@ namespace CodedWebTest
             app.UseRouting();
             app.UseAuthorization();
 
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            
         }
 
         #region Do not edit
