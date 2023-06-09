@@ -2,13 +2,11 @@
 
 Requires use of Visual Studio 2022 (https://visualstudio.microsoft.com/downloads) and the .NET 6.0 SDK (https://dotnet.microsoft.com/download)  
 
-### Purpose ###
 
-This is a skills test developed by Coded Inc. for Software Engineer applicants. Applicants will fork this repository to their own, complete the objective, then provide Coded with access to their repository for review.  
 
 ### Objective ###
 
-The goal of this test is to add missing functionality to an existing ASP.NET web application.  
+The goal is to add missing functionality to an existing ASP.NET web application.  
 
 ### Required Functionality ###
   
@@ -18,7 +16,7 @@ Get the email from the current user's session.
 
 ### Additional Considerations ###
   
-In this test, we are hoping to see demonstration of an understanding of the following:  
+Here, we are hoping to see demonstration of an understanding of the following:  
   
 Model-View-Controller Architecture  
 Entity Framework  
